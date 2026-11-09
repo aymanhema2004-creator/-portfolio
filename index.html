@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a19">
+  <meta name="description" content="Ayman Ibrahim — Flutter developer, Python instructor and software builder. Mr. Ayman Academy & Nexora POS projects.">
+  <title>Ayman Ibrahim | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="contact-config.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="portfolio-stats-config.js"></script>
+  <script defer src="portfolio-stats.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="code-rain" id="codeRain" aria-hidden="true"></div>
+  <div class="app-progress" id="readingProgress" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Ayman Ibrahim Portfolio"><span class="brand-symbol">&lt;/&gt;</span><span><strong>Ayman Ibrahim</strong><small data-t="brandSub">Developer Portfolio · معرض الأعمال</small></span></a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#home" data-t="navHome">الرئيسية</a><a href="#projects" data-t="navProjects">المشاريع</a><a href="#services" data-t="navServices">خدماتي</a><a href="#skills" data-t="navSkills">المهارات</a><a href="#about" data-t="navAbout">عني</a><a href="#contact" data-t="navContact">تواصل معي</a>
+      </nav>
+      <div class="nav-actions"><button id="languageSwitch" class="language-switch" type="button" aria-label="Switch language"><span class="globe">◎</span> <span id="languageName">English</span></button><button id="menuSwitch" class="hamburger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open navigation">☰</button></div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero" id="home" aria-labelledby="mainTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span><span data-t="welcome">أهلاً بيك في عالمي البرمجي</span><span class="tag-code">&lt;/&gt;</span></div>
+        <p class="pretitle">// developer.portfolio</p>
+        <h1 id="mainTitle">Ayman <span>Ibrahim</span><span class="cursor" aria-hidden="true"></span></h1>
+        <div class="subtitle" dir="ltr">Flutter Developer <i>·</i> Python Instructor <i>·</i> Software Builder</div>
+        <p class="hero-description" data-t="heroDesc">بصمّم وبطوّر تطبيقات ومنصات رقمية باستخدام Flutter، وبشرح Python. هدفي أحوّل الأفكار لحلول عملية بواجهات قوية وتجربة استخدام متقنة.</p>
+        <div class="hero-actions"><a class="action-btn primary" href="#projects"><span data-t="viewProjects">استكشف مشاريعي</span><span>↗</span></a><a class="action-btn secondary" id="heroContactBtn" href="#contact"><span data-t="contactBtn">تواصل معايا</span><span>✉</span></a></div>
+        <div class="hero-tags" dir="ltr"><span><span class="mini-dot blue"></span> Flutter / Dart</span><span><span class="mini-dot purple"></span> Python</span><span><span class="mini-dot mint"></span> Full-product thinking</span></div>
+      </div>
+      <div class="hero-scene" aria-label="Code editor and terminal illustration">
+        <div class="floating-bubble flutter-float">◇ Flutter</div><div class="floating-bubble python-float">⌁ Python</div>
+        <div class="editor-window" dir="ltr">
+          <div class="editor-title"><span class="circle red"></span><span class="circle yellow"></span><span class="circle green"></span><span class="editor-tab">◇ main.dart <span>×</span></span></div>
+          <div class="editor-content"><div class="file-tree"><b>▾ portfolio/</b><span>▾ lib/</span><span class="selected">↳ main.dart</span><span>▸ core/</span><span>▸ features/</span><span>▸ widgets/</span><span>pubspec.yaml</span><span>README.md</span></div>
+            <pre class="code-sample"><span class="line-num">01</span> <span class="syntax-pink">import</span> <span class="syntax-yellow">'package:flutter/material.dart'</span>;
+<span class="line-num">02</span>
+<span class="line-num">03</span> <span class="syntax-pink">void</span> <span class="syntax-blue">main</span>() =&gt; <span class="syntax-blue">runApp</span>(<span class="syntax-pink">const</span> <span class="syntax-cyan">MyPortfolio</span>());
+<span class="line-num">04</span>
+<span class="line-num">05</span> <span class="syntax-pink">class</span> <span class="syntax-cyan">MyPortfolio</span> {
+<span class="line-num">06</span>   <span class="syntax-pink">final</span> developer = <span class="syntax-yellow">'Ayman Ibrahim'</span>;
+<span class="line-num">07</span>   <span class="syntax-pink">final</span> passion = <span class="syntax-yellow">'Build & teach'</span>;
+<span class="line-num">08</span>
+<span class="line-num">09</span>   <span class="syntax-green">// Ideas into real products</span>
+<span class="line-num">10</span>   <span class="syntax-blue">build</span>(idea) =&gt; <span class="syntax-cyan">SomethingAmazing</span>();
+<span class="line-num">11</span> }</pre>
+          </div>
+          <div class="editor-status"><span>⎇ main</span><span>Flutter · Dart</span><span>UTF-8</span></div>
+        </div>
+        <div class="terminal-window" dir="ltr"><div class="terminal-head"><span>●</span> terminal — ayman@portfolio</div><div class="terminal-lines"><span class="terminal-green">ayman@portfolio:~$</span> flutter run<br><span class="terminal-blue">✓</span> Building ideas...<br><span class="terminal-blue">✓</span> Crafting digital experiences<br><span class="terminal-green">➜</span> <span class="blinking-cursor">▌</span></div></div>
+        <div class="orbit ring-one" aria-hidden="true"></div>
+      </div>
+    </section>
+    <section class="engagement-strip" id="engagement" aria-labelledby="engagementLabel">
+      <div class="engagement-heading"><span class="engagement-indicator" aria-hidden="true">●</span><div><span class="small-label">// community.metrics</span><h2 id="engagementLabel"><span data-t="engagementTitle">تفاعل الزوار</span> <span class="metric-online">LIVE</span></h2><p data-t="engagementSub">أرقام حقيقية مشتركة لكل زوار الموقع بعد تفعيل الربط.</p></div></div>
+      <div class="metric-block" aria-label="Visitor counter"><span class="metric-icon" aria-hidden="true">◉</span><div><strong class="metric-value" id="visitorCount" aria-live="polite">—</strong><span class="metric-caption" data-t="visitorsLabel">زائر</span></div></div>
+      <div class="metric-block" aria-label="Like counter"><span class="metric-icon heart-icon" aria-hidden="true">♥</span><div><strong class="metric-value" id="likeCount" aria-live="polite">—</strong><span class="metric-caption" data-t="likesLabel">إعجاب</span></div></div>
+      <div class="engagement-action"><button id="portfolioLikeBtn" class="portfolio-like-btn" type="button" aria-pressed="false" disabled><span class="like-heart" aria-hidden="true">♡</span><span id="likeBtnLabel" data-t="likeButton">عجبك شغلي؟ دوس لايك</span></button><span class="metrics-note" id="metricsStatus" role="status" aria-live="polite">ا</span></div>
+    </section>
+    <section class="section projects" id="projects" aria-labelledby="projectsTitle">
+      <header class="section-heading"><div><div class="small-label">01 / FEATURED WORK</div><h2 id="projectsTitle" data-t="projectsTitle">مشاريعي <span>المميزة</span></h2><p data-t="projectsSub">مش مجرد صور للواجهات؛ دي أنظمة اشتغلت على تطويرها من الفكرة للتنفيذ.</p></div><div class="section-symbol" aria-hidden="true">{ projects }</div></header>
+      <article class="project-card academy" id="academy" data-project="academy">
+        <div class="project-details"><div class="project-id"><span class="project-number">01</span><span class="project-status real" data-t="actualImages">صور حقيقية من التطبيق</span></div><div class="project-logo">✦</div><h3>Mr. Ayman Academy</h3><p class="project-kind" data-t="academyType">منصة تعليم برمجة | E-learning Platform</p><p class="project-description" data-t="academyDesc">منصة تعليمية لتعلّم البرمجة، فيها كورسات ومحاضرات ومجتمع تفاعلي ومشاريع للطلاب، مع لوحة تحكم للمحاضر وإدارة الوصول للمحتوى.</p><div class="technology-list"><span>Flutter</span><span>Supabase</span><span>Cloudflare R2</span><span>Windows</span></div><div class="project-actions"><a class="action-btn small primary" href="https://github.com/aymanhema2004-creator/Mr-Ayman-Academy-Releases" target="_blank" rel="noopener noreferrer"><span data-t="academyRelease">الإصدارات المنشورة</span> ↗</a><span class="gallery-hint" data-t="galleryHint">اضغط على الصورة لتكبيرها</span></div></div>
+        <div class="gallery-area" data-gallery="academy"><div class="gallery-titlebar" dir="ltr"><div class="window-dots"><i></i><i></i><i></i></div><span>mr-ayman-academy / gallery</span><span class="frame-badge">SCREENSHOTS</span></div><button class="main-picture" type="button" data-zoom="academy" aria-label="Open Academy screenshot"><img src="assets/1.PNG" alt="Mr. Ayman Academy dashboard" fetchpriority="high"><span class="picture-zoom">⤢</span></button><div class="gallery-bottom"><button class="gallery-arrow prev" type="button" data-nav="prev" aria-label="Previous Academy screenshot">‹</button><div class="gallery-counter" aria-live="polite"><span class="current-count">01</span> <small>/ 04</small><span class="slide-name" data-title="academy">الواجهة الرئيسية</span></div><button class="gallery-arrow next" type="button" data-nav="next" aria-label="Next Academy screenshot">›</button></div><div class="thumbnail-strip" aria-label="Academy screenshots"></div></div>
+      </article>
+      <article class="project-card nexora" id="nexora" data-project="nexora">
+        <div class="project-details"><div class="project-id"><span class="project-number">02</span><span class="project-status concept" data-t="conceptImages">تصورات تصميمية للمشروع</span></div><div class="project-logo n-logo">N</div><h3>Nexora POS</h3><p class="project-kind" data-t="nexoraType">نظام إدارة مبيعات ومخزون | Point of Sale</p><p class="project-description" data-t="nexoraDesc">تطبيق لإدارة الكاشير والمنتجات والمخزون والفواتير والعملاء والتقارير، مع صلاحيات للموظفين وإعدادات قابلة للتخصيص.</p><div class="technology-list"><span>Flutter</span><span>Dart</span><span>Business Management</span><span>POS</span></div><p class="disclosure" data-t="nexoraDisclosure">الصور مصممة لعرض فكرة وواجهات Nexora POS بصريًا؛ ليست لقطات شاشة من النسخة الفعلية للتطبيق، والأرقام بداخلها تجريبية.</p><div class="project-actions"><span class="gallery-hint" data-t="galleryHint">اضغط على الصورة لتكبيرها</span></div></div>
+        <div class="gallery-area" data-gallery="nexora"><div class="gallery-titlebar" dir="ltr"><div class="window-dots"><i></i><i></i><i></i></div><span>nexora-pos / concept-gallery</span><span class="frame-badge">CONCEPT UI</span></div><button class="main-picture" type="button" data-zoom="nexora" aria-label="Open Nexora concept image"><img src="assets/nexora-dashboard.png" alt="Nexora POS illustrative dashboard concept" loading="lazy"><span class="picture-zoom">⤢</span></button><div class="gallery-bottom"><button class="gallery-arrow prev" type="button" data-nav="prev" aria-label="Previous Nexora image">‹</button><div class="gallery-counter" aria-live="polite"><span class="current-count">01</span> <small>/ 04</small><span class="slide-name" data-title="nexora">لوحة التحكم</span></div><button class="gallery-arrow next" type="button" data-nav="next" aria-label="Next Nexora image">›</button></div><div class="thumbnail-strip" aria-label="Nexora concepts"></div></div>
+      </article>
+    </section>
+    <section class="section" id="services"><header class="section-heading"><div><div class="small-label">02 / WHAT I BUILD</div><h2 data-t="servicesTitle">خدمات <span>أقدمها</span></h2><p data-t="servicesSub">حلول برمجية مصممة حسب احتياجات المشروع، من البداية لحد المنتج.</p></div></header><div class="services-grid"><article class="service-card"><span class="service-icon">⌘</span><h3 data-t="service1Title">تطبيقات موبايل وسطح مكتب</h3><p data-t="service1Desc">تطوير تطبيقات Flutter بواجهات متجاوبة وتجربة مستخدم سهلة.</p><small>Flutter · Dart</small></article><article class="service-card"><span class="service-icon">▤</span><h3 data-t="service2Title">أنظمة إدارة الأعمال</h3><p data-t="service2Desc">حلول للمبيعات والمخزون والفواتير والصلاحيات وإدارة العمليات.</p><small>POS · Dashboards</small></article><article class="service-card"><span class="service-icon">&lt;/&gt;</span><h3 data-t="service3Title">منصات ومشاريع تعليمية</h3><p data-t="service3Desc">بناء منصات للكورسات والمحتوى والتواصل بين المتعلمين والمحاضرين.</p><small>E-learning · Community</small></article></div></section>
+    <section class="section" id="skills"><header class="section-heading"><div><div class="small-label">03 / TECH STACK</div><h2 data-t="skillsTitle">الأدوات <span>والتقنيات</span></h2><p data-t="skillsSub">التقنيات اللي بستخدمها في مشاريعي.</p></div></header><div class="stack-grid"><div class="stack-pill"><b>◈</b><span>Flutter</span></div><div class="stack-pill"><b>◇</b><span>Dart</span></div><div class="stack-pill"><b>Py</b><span>Python</span></div><div class="stack-pill"><b>⚡</b><span>Supabase</span></div><div class="stack-pill"><b>☁</b><span>Cloudflare R2</span></div><div class="stack-pill"><b>⌬</b><span>UI / UX</span></div></div></section>
+    <section class="section" id="about"><header class="section-heading"><div><div class="small-label">04 / WHO I AM</div><h2 data-t="aboutTitle">مين <span>أنا؟</span></h2></div></header><div class="about-layout"><div class="about-text"><p data-t="aboutDesc">أنا أيمن إبراهيم، مطور مهتم ببناء تطبيقات وأنظمة عملية. اشتغلت على منصة Mr. Ayman Academy ونظام Nexora POS، وبشارك شغفي بالبرمجة من خلال تدريس Python. بحب أجمع بين التفكير المنطقي والتصميم الواضح.</p><div class="about-facts"><span>✦ Build</span><span>✦ Learn</span><span>✦ Teach</span></div></div><div class="about-terminal" dir="ltr"><div class="terminal-head">developer.json</div><pre>{
+  <span class="syntax-blue">"name"</span>: <span class="syntax-yellow">"Ayman Ibrahim"</span>,
+  <span class="syntax-blue">"focus"</span>: [<span class="syntax-yellow">"Flutter"</span>, <span class="syntax-yellow">"Python"</span>],
+  <span class="syntax-blue">"work"</span>: [<span class="syntax-yellow">"Academy"</span>, <span class="syntax-yellow">"POS"</span>],
+  <span class="syntax-blue">"status"</span>: <span class="syntax-green">"keep building"</span>
+}</pre></div></div></section>
+    <section class="contact-section" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="contact-content">
+        <div class="small-label">05 / LET'S CONNECT</div>
+        <h2 data-t="contactTitle">خلينا <span>نبني فكرتك</span> سوا</h2>
+        <p data-t="contactSub">عندك فكرة تطبيق أو منصة، أو حابب تتعاون معايا في مشروع؟ دي وسائل التواصل المتاحة.</p>
+        <div class="preferred-contact" id="preferredContact" hidden>✆ <span data-t="whatsappPreferred">واتساب هو وسيلة التواصل الأساسية للعملاء</span></div>
+        <div class="contact-links" id="contactLinks" aria-label="Contact methods"></div>
+        <p class="contact-note" id="contactNote" data-t="contactNote">تقدر تشوف أعمالي على GitHub. هتظهر طرق التواصل المباشر بمجرد إضافة بياناتها.</p>
+        <div id="projectInquiry" class="inquiry-box" hidden>
+          <div class="small-label">// send_project_request()</div>
+          <h3 data-t="inquiryTitle">احكيلي عن مشروعك</h3>
+          <p data-t="inquiryIntro">املا التفاصيل دي وهتتفتح رسالة واتساب جاهزة — من غير تسجيل أو إرسال بيانات لموقعنا.</p>
+          <form id="projectInquiryForm" class="inquiry-form">
+            <label><span data-t="inquiryName">اسمك</span><input id="clientName" name="clientName" required maxlength="80" autocomplete="name" data-placeholder="namePlace" placeholder="الاسم"/></label>
+            <label><span data-t="inquiryType">نوع المشروع</span>
+              <select id="projectType" name="projectType" required>
+                <option value="mobile" data-t="typeMobile">تطبيق موبايل</option>
+                <option value="desktop" data-t="typeDesktop">برنامج كمبيوتر</option>
+                <option value="pos" data-t="typePOS">نظام مبيعات وإدارة</option>
+                <option value="learning" data-t="typeLearning">منصة تعليمية</option>
+                <option value="other" data-t="typeOther">مشروع آخر</option>
+              </select>
+            </label>
+            <label class="full"><span data-t="inquiryDetails">فكرة المشروع</span><textarea id="projectDetails" name="projectDetails" required maxlength="1600" rows="3" data-placeholder="detailsPlace" placeholder="احكيلي عايز التطبيق يعمل إيه..."></textarea></label>
+            <label class="full"><span data-t="inquiryBudget">الميزانية المتوقعة (اختياري)</span><input id="projectBudget" name="projectBudget" maxlength="80" data-placeholder="budgetPlace" placeholder="مثلاً 20,000 جنيه" /></label>
+            <button type="submit" class="action-btn primary inquiry-submit"><span data-t="inquirySend">ابعت الطلب على واتساب</span> ↗</button>
+          </form>
+          <p class="privacy-note" data-t="inquiryPrivacy">المعلومات دي بتتحول لرسالة واتساب عند الضغط على الزر؛ مش بنخزنها على الموقع.</p>
+        </div>
+      </div>
+      <div class="contact-graphic" aria-hidden="true"><span>&lt;/&gt;</span><div>const nextProject = <b>yourIdea</b>;</div><div class="contact-cursor">_</div></div>
+    </section>
+  </main>
+  <footer class="footer"><span>© <span id="year"></span> Ayman Ibrahim</span><span>Made by Ayman Ibrahim</span><a href="#home">↑ <span data-t="backToTop">فوق</span></a></footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project screenshot viewer" aria-hidden="true"><div class="lightbox-backdrop" data-dismiss="true"></div><div class="lightbox-panel"><div class="lightbox-header"><div class="lightbox-heading" id="lightboxHeading">Project</div><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">×</button></div><div class="lightbox-content"><button type="button" id="lightboxPrev" class="lightbox-nav" aria-label="Previous image">‹</button><img id="lightboxImage" src="" alt=""><button type="button" id="lightboxNext" class="lightbox-nav" aria-label="Next image">›</button></div><p id="lightboxCaption" class="lightbox-caption"></p></div></div>
+</body>
+</html>
